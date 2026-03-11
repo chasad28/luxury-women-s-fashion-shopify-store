@@ -1,0 +1,85 @@
+import { Product } from '../backend';
+
+// Static placeholder products for display when backend has no data
+export const PLACEHOLDER_PRODUCTS: Product[] = [
+  {
+    id: BigInt(0),
+    name: 'The Noir Tote',
+    description: 'A masterpiece of structured elegance. Crafted from full-grain Italian leather, this tote embodies effortless sophistication for the modern woman.',
+    price: 895,
+    category: 'Handbags',
+    colors: ['Black', 'Cognac'],
+    images: ['/assets/generated/product-tote-black.dim_800x800.jpg'],
+    stock: BigInt(12),
+    isBestSeller: true,
+    isNewArrival: false,
+  },
+  {
+    id: BigInt(1),
+    name: 'Ivory Quilted Crossbody',
+    description: 'Timeless quilted leather with a delicate gold chain strap. A statement piece that transitions seamlessly from day to evening.',
+    price: 645,
+    category: 'Purses',
+    colors: ['Cream', 'Black'],
+    images: ['/assets/generated/product-crossbody-cream.dim_800x800.jpg'],
+    stock: BigInt(8),
+    isBestSeller: true,
+    isNewArrival: false,
+  },
+  {
+    id: BigInt(2),
+    name: 'Camel Leather Satchel',
+    description: 'Sun-kissed camel leather with hand-stitched detailing. Spacious, refined, and built to accompany you through every chapter.',
+    price: 780,
+    category: 'Handbags',
+    colors: ['Camel', 'Tan'],
+    images: ['/assets/generated/product-satchel-camel.dim_800x800.jpg'],
+    stock: BigInt(6),
+    isBestSeller: false,
+    isNewArrival: true,
+  },
+  {
+    id: BigInt(3),
+    name: 'Gold Evening Clutch',
+    description: 'An evening essential. This luminous gold clutch is the perfect companion for life\'s most extraordinary moments.',
+    price: 425,
+    category: 'Accessories',
+    colors: ['Gold', 'Silver'],
+    images: ['/assets/generated/product-clutch-gold.dim_800x800.jpg'],
+    stock: BigInt(15),
+    isBestSeller: false,
+    isNewArrival: true,
+  },
+  {
+    id: BigInt(4),
+    name: 'Beige Suede Bucket Bag',
+    description: 'Soft suede meets architectural hardware. This bucket bag is a study in understated luxury — effortlessly chic, endlessly versatile.',
+    price: 560,
+    category: 'Handbags',
+    colors: ['Beige', 'Ivory'],
+    images: ['/assets/generated/product-bucket-beige.dim_800x800.jpg'],
+    stock: BigInt(10),
+    isBestSeller: false,
+    isNewArrival: true,
+  },
+  {
+    id: BigInt(5),
+    name: 'Patent Shoulder Bag',
+    description: 'Sleek patent leather with silver hardware. A bold, confident silhouette for the woman who commands every room she enters.',
+    price: 720,
+    category: 'Handbags',
+    colors: ['Black'],
+    images: ['/assets/generated/product-shoulder-black.dim_800x800.jpg'],
+    stock: BigInt(7),
+    isBestSeller: true,
+    isNewArrival: false,
+  },
+];
+
+export function formatPrice(price: number): string {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 0,
+  }).format(price);
+}

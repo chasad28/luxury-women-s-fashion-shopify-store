@@ -1,0 +1,280 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-luxury-visual-theme-across-the-entire-frontend-color-palette-of-soft-beige-f5f0e8-ivory-fffff0-champagne-gold-c9a84c-and-black-0a0a0a-accents-use-an-elegant-serif-font-e-g-playfair-display-or-similar-via-google-fonts-for-all-headings-and-a-clean-sans-serif-e-g-raleway-or-lato-for-body-text-apply-generous-white-space-smooth-scroll-behavior-and-subtle-fade-slide-in-animations-on-scroll-for-all-sections-ensure-fully-mobile-first-responsive-design",
+      "featureTitle": "Implement a luxury visual theme across the entire frontend: color palette of soft beige (#F5F0E8), ivory (#FFFFF0), champagne gold (#C9A84C), and black (#0A0A0A) accents. Use an elegant serif font (e.g., Playfair Display or similar via Google Fonts) for all headings and a clean sans-serif (e.g., Raleway or Lato) for body text. Apply generous white space, smooth scroll behavior, and subtle fade/slide-in animations on scroll for all sections. Ensure fully mobile-first responsive design.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-sticky-navigation-header-with-the-brand-logo-name-left-aligned-or-centered-and-menu-links-home-shop-new-arrivals-best-sellers-about-us-contact-include-cart-icon-with-item-count-badge-wishlist-icon-and-a-hamburger-menu-for-mobile-navigation-must-remain-visible-on-scroll-with-a-semi-transparent-or-solid-luxury-background",
+      "featureTitle": "Build a sticky navigation header with the brand logo/name left-aligned or centered, and menu links: Home, Shop, New Arrivals, Best Sellers, About Us, Contact. Include cart icon with item count badge, wishlist icon, and a hamburger menu for mobile. Navigation must remain visible on scroll with a semi-transparent or solid luxury background.",
+      "files": [
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-full-width-hero-section-as-the-first-section-on-the-homepage-it-must-display-the-generated-hero-lifestyle-image-as-a-full-bleed-background-overlaid-with-an-aspirational-luxury-headline-e-g-carry-the-art-of-elegance-a-supporting-subheadline-and-a-prominently-styled-shop-now-cta-button-in-champagne-gold-or-black-the-text-overlay-must-be-legible-with-a-subtle-dark-gradient-if-needed",
+      "featureTitle": "Create a full-width hero section as the first section on the homepage. It must display the generated hero lifestyle image as a full-bleed background, overlaid with an aspirational luxury headline (e.g., 'Carry the Art of Elegance'), a supporting subheadline, and a prominently styled 'Shop Now' CTA button in champagne gold or black. The text overlay must be legible with a subtle dark gradient if needed.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-featured-collections-section-below-the-hero-showcasing-four-collection-cards-handbags-purses-new-arrivals-and-best-sellers-each-card-displays-a-collection-image-collection-name-and-a-subtle-explore-link-cards-should-have-a-hover-animation-e-g-scale-or-overlay-fade-clicking-a-card-navigates-to-the-corresponding-filtered-collections-page",
+      "featureTitle": "Build a Featured Collections section below the hero showcasing four collection cards: Handbags, Purses, New Arrivals, and Best Sellers. Each card displays a collection image, collection name, and a subtle 'Explore' link. Cards should have a hover animation (e.g., scale or overlay fade). Clicking a card navigates to the corresponding filtered collections page.",
+      "files": [
+        "frontend/src/components/FeaturedCollections.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-brand-story-section-that-communicates-craftsmanship-elegance-and-exclusivity-it-should-include-a-headline-e-g-born-from-a-love-of-fine-craftsmanship-a-2-3-paragraph-luxury-toned-description-and-optionally-a-side-image-copy-must-use-premium-aspirational-language-and-avoid-casual-tone",
+      "featureTitle": "Create a Brand Story section that communicates craftsmanship, elegance, and exclusivity. It should include a headline (e.g., 'Born from a Love of Fine Craftsmanship'), a 2–3 paragraph luxury-toned description, and optionally a side image. Copy must use premium, aspirational language and avoid casual tone.",
+      "files": [
+        "frontend/src/components/BrandStory.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-product-showcase-grid-section-on-the-homepage-displaying-6-8-placeholder-luxury-products-each-product-card-shows-the-product-image-name-and-price-cards-must-have-hover-effects-e-g-image-zoom-in-or-overlay-with-quick-view-or-wishlist-icon-clicking-a-card-navigates-to-the-product-detail-page",
+      "featureTitle": "Build a Product Showcase Grid section on the homepage displaying 6–8 placeholder luxury products. Each product card shows the product image, name, and price. Cards must have hover effects (e.g., image zoom-in or overlay with quick-view or wishlist icon). Clicking a card navigates to the product detail page.",
+      "files": [
+        "frontend/src/components/ProductShowcase.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-social-proof-testimonials-section-with-3-4-customer-reviews-each-testimonial-shows-the-reviewer-s-name-star-rating-5-stars-and-quote-use-elegant-typography-and-a-clean-card-or-quote-layout-content-must-sound-aspirational-and-premium-e-g-the-quality-is-simply-unmatched-i-receive-compliments-everywhere-i-go",
+      "featureTitle": "Add a Social Proof / Testimonials section with 3–4 customer reviews. Each testimonial shows the reviewer's name, star rating (5 stars), and quote. Use elegant typography and a clean card or quote layout. Content must sound aspirational and premium (e.g., 'The quality is simply unmatched — I receive compliments everywhere I go.').",
+      "files": [
+        "frontend/src/components/Testimonials.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-trust-badges-strip-section-with-three-badges-secure-checkout-fast-free-shipping-and-premium-quality-guaranteed-use-elegant-icons-e-g-lock-shipping-box-ribbon-star-and-short-descriptor-text-beneath-each-badge",
+      "featureTitle": "Add a Trust Badges strip/section with three badges: 'Secure Checkout', 'Fast & Free Shipping', and 'Premium Quality Guaranteed'. Use elegant icons (e.g., lock, shipping box, ribbon/star) and short descriptor text beneath each badge.",
+      "files": [
+        "frontend/src/components/TrustBadges.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-newsletter-sign-up-section-with-a-luxury-toned-headline-e-g-join-the-circle-of-elegance-a-short-description-offering-an-exclusive-benefit-e-g-15-off-your-first-order-an-email-input-field-and-a-subscribe-button-styled-in-champagne-gold-or-black-store-subscribed-email-addresses-in-the-backend",
+      "featureTitle": "Add a Newsletter Sign-Up section with a luxury-toned headline (e.g., 'Join the Circle of Elegance'), a short description offering an exclusive benefit (e.g., '15% off your first order'), an email input field, and a 'Subscribe' button styled in champagne gold or black. Store subscribed email addresses in the backend.",
+      "files": [
+        "frontend/src/components/Newsletter.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-an-elegant-footer-with-brand-logo-name-and-tagline-quick-navigation-links-home-shop-new-arrivals-best-sellers-about-us-contact-privacy-policy-terms-social-media-icon-links-instagram-pinterest-facebook-tiktok-placeholder-hrefs-and-a-copyright-line-use-a-dark-background-deep-black-or-very-dark-charcoal-with-ivory-beige-text-for-contrast",
+      "featureTitle": "Build an elegant footer with: brand logo/name and tagline, quick navigation links (Home, Shop, New Arrivals, Best Sellers, About Us, Contact, Privacy Policy, Terms), social media icon links (Instagram, Pinterest, Facebook, TikTok — placeholder hrefs), and a copyright line. Use a dark background (deep black or very dark charcoal) with ivory/beige text for contrast.",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-collections-page-that-displays-all-products-in-a-clean-grid-layout-include-filter-controls-for-category-handbags-purses-accessories-price-low-to-high-high-to-low-color-and-popularity-best-sellers-new-arrivals-product-cards-in-the-grid-must-have-hover-animations-consistent-with-the-homepage-showcase-grid-filtering-must-update-the-displayed-products-reactively-without-page-reload",
+      "featureTitle": "Build a Collections page that displays all products in a clean grid layout. Include filter controls for: Category (Handbags, Purses, Accessories), Price (Low to High / High to Low), Color, and Popularity (Best Sellers, New Arrivals). Product cards in the grid must have hover animations consistent with the homepage showcase grid. Filtering must update the displayed products reactively without page reload.",
+      "files": [
+        "frontend/src/components/FilterControls.tsx",
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/pages/CollectionsPage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-product-detail-page-it-must-include-large-product-image-gallery-with-image-zoom-on-hover-click-product-name-price-short-luxury-focused-description-variant-selectors-e-g-color-size-quantity-selector-add-to-cart-button-black-gold-styled-and-buy-now-button-expandable-accordion-sections-for-shipping-returns-and-care-instructions-and-a-customer-reviews-section-showing-existing-reviews-and-allowing-logged-in-users-to-leave-a-review",
+      "featureTitle": "Build a Product Detail page. It must include: large product image gallery with image zoom on hover/click, product name, price, short luxury-focused description, variant selectors (e.g., color, size), quantity selector, 'Add to Cart' button (black/gold styled) and 'Buy Now' button, expandable accordion sections for Shipping, Returns, and Care Instructions, and a Customer Reviews section showing existing reviews and allowing logged-in users to leave a review.",
+      "files": [
+        "frontend/src/components/ImageGallery.tsx",
+        "frontend/src/components/ReviewsSection.tsx",
+        "frontend/src/pages/ProductDetailPage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-slide-out-cart-drawer-accessible-via-the-cart-icon-in-the-navigation-it-must-display-all-cart-items-image-name-price-quantity-controls-remove-button-order-subtotal-and-a-proceed-to-checkout-cta-the-drawer-opens-and-closes-with-a-smooth-slide-animation-from-the-right-side-cart-state-must-persist-across-page-navigations",
+      "featureTitle": "Implement a slide-out Cart Drawer accessible via the cart icon in the navigation. It must display all cart items (image, name, price, quantity controls, remove button), order subtotal, and a 'Proceed to Checkout' CTA. The drawer opens and closes with a smooth slide animation from the right side. Cart state must persist across page navigations.",
+      "files": [
+        "frontend/src/components/CartDrawer.tsx",
+        "frontend/src/hooks/useCart.ts"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-wishlist-feature-users-can-add-remove-products-to-a-wishlist-by-clicking-a-heart-icon-on-product-cards-and-product-detail-pages-a-dedicated-wishlist-page-lists-all-saved-products-with-their-image-name-price-and-an-add-to-cart-button-wishlist-state-should-persist-in-local-frontend-state-or-backend",
+      "featureTitle": "Implement a Wishlist feature. Users can add/remove products to a wishlist by clicking a heart icon on product cards and product detail pages. A dedicated Wishlist page lists all saved products with their image, name, price, and an 'Add to Cart' button. Wishlist state should persist in local frontend state or backend.",
+      "files": [
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/hooks/useWishlist.ts",
+        "frontend/src/pages/ProductDetailPage.tsx",
+        "frontend/src/pages/WishlistPage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Maison Élite Luxury Fashion E-Commerce Frontend",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement luxury visual theme with beige/ivory/champagne gold/black palette, serif/sans-serif typography, smooth scroll, animations, and mobile-first responsive design",
+      "acceptanceCriteria": [
+        "All headings use a serif font and all body text uses a sans-serif font",
+        "Color palette matches beige, ivory, champagne gold, and black accents throughout",
+        "Page has smooth scrolling and subtle entrance animations on content sections",
+        "Layout is fully responsive and mobile-first at 375px, 768px, and 1280px breakpoints"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Import Google Fonts (Playfair Display for headings, Raleway for body). Define CSS custom properties for color palette: --color-beige (#F5F0E8), --color-ivory (#FFFFF0), --color-gold (#C9A84C), --color-black (#0A0A0A). Add global styles for smooth scroll behavior (scroll-behavior: smooth), base typography rules applying serif to headings and sans-serif to body text, and keyframe animations for fade-in and slide-in effects."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom colors matching the luxury palette (beige, ivory, gold, black), custom font families (serif: Playfair Display, sans: Raleway), and custom animation utilities for fade-in and slide-in effects. Configure responsive breakpoints for mobile-first design (sm: 375px, md: 768px, lg: 1280px)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build sticky navigation header with logo, menu links (Home, Shop, New Arrivals, Best Sellers, About Us, Contact), cart icon with badge, wishlist icon, and mobile hamburger menu",
+      "acceptanceCriteria": [
+        "Navigation sticks to the top of the viewport on scroll",
+        "All six menu links are present and navigate to their respective sections/pages",
+        "Cart icon shows item count badge",
+        "Hamburger menu appears on mobile and expands into a full-screen or slide-out menu"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Create sticky header component with brand logo/name, navigation links (Home, Shop, New Arrivals, Best Sellers, About Us, Contact), cart icon with item count badge from cart state, wishlist icon, and hamburger menu button for mobile. Apply luxury styling with semi-transparent/solid background on scroll. Include state for mobile menu toggle and scroll-triggered background change."
+        },
+        {
+          "path": "frontend/src/components/MobileMenu.tsx",
+          "operation": "create",
+          "description": "Create mobile menu component that slides out from the side when hamburger is clicked. Display all navigation links in a full-screen or overlay layout with smooth enter/exit animations. Style with luxury aesthetic matching the overall theme."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create full-width hero section with generated lifestyle image background, aspirational headline, subheadline, and 'Shop Now' CTA button",
+      "acceptanceCriteria": [
+        "Hero section spans full viewport width and at least 90vh on desktop",
+        "Headline, subheadline, and 'Shop Now' button are visible and legible over the image",
+        "CTA button is styled with premium styling (gold or black with hover effect)",
+        "Section is responsive and looks polished on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create full-width hero section using the generated image at frontend/public/assets/generated/hero-lifestyle.dim_1920x1080.jpg as background. Overlay with dark gradient for text legibility. Display headline 'Carry the Art of Elegance', supporting subheadline, and 'Shop Now' CTA button styled in champagne gold with hover effects. Ensure section is at least 90vh on desktop and fully responsive on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Featured Collections section with four collection cards (Handbags, Purses, New Arrivals, Best Sellers) with images, hover animations, and navigation to filtered collections",
+      "acceptanceCriteria": [
+        "Four collection cards are displayed in a responsive grid (2x2 on mobile, 4-column on desktop)",
+        "Each card shows image, title, and Explore link",
+        "Hover animation is present on each card",
+        "Cards link to the corresponding filtered collections view"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeaturedCollections.tsx",
+          "operation": "create",
+          "description": "Create featured collections section with four collection cards. Use generated images: frontend/public/assets/generated/collection-handbags.dim_800x600.jpg, frontend/public/assets/generated/collection-purses.dim_800x600.jpg, frontend/public/assets/generated/collection-new-arrivals.dim_800x600.jpg, frontend/public/assets/generated/collection-best-sellers.dim_800x600.jpg. Each card displays collection image, name, and 'Explore' link. Implement hover animations (scale or overlay fade). Cards navigate to Collections page with appropriate category/filter applied. Layout is 2x2 grid on mobile, 4-column on desktop."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create Brand Story section with headline, luxury-toned paragraphs, and optional side image communicating craftsmanship and exclusivity",
+      "acceptanceCriteria": [
+        "Brand story section is present on the homepage",
+        "Copy is written in an aspirational, luxury tone",
+        "Section includes a headline and at least two paragraphs",
+        "Section is visually distinct with adequate white space"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BrandStory.tsx",
+          "operation": "create",
+          "description": "Create brand story section with headline 'Born from a Love of Fine Craftsmanship', 2-3 paragraphs written in aspirational, luxury tone describing craftsmanship, elegance, and exclusivity. Optionally display the generated image frontend/public/assets/generated/brand-story-craftsmanship.dim_1200x700.jpg as a side or background element. Apply generous white space and luxury typography styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build Product Showcase Grid section displaying 6-8 placeholder luxury products with hover effects and navigation to product detail pages",
+      "acceptanceCriteria": [
+        "Grid shows 6–8 product cards in a responsive layout",
+        "Each card has product image, name, and price",
+        "Hover effect is present (scale, overlay, or icon reveal)",
+        "Clicking a card navigates to the product detail page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductShowcase.tsx",
+          "operation": "create",
+          "description": "Create product showcase grid section displaying 6-8 product cards. Each card shows product image (using generated product images: frontend/public/assets/generated/product-tote-black.dim_800x800.jpg, frontend/public/assets/generated/product-crossbody-cream.dim_800x800.jpg, frontend/public/assets/generated/product-satchel-camel.dim_800x800.jpg, frontend/public/assets/generated/product-clutch-gold.dim_800x800.jpg, frontend/public/assets/generated/product-bucket-beige.dim_800x800.jpg, frontend/public/assets/generated/product-shoulder-black.dim_800x800.jpg), product name, and price. Implement hover effects (image zoom or overlay with quick-view/wishlist icon). Cards navigate to product detail page on click. Use responsive grid layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add Social Proof / Testimonials section with 3-4 customer reviews showing name, 5-star rating, and luxury-toned quotes",
+      "acceptanceCriteria": [
+        "3–4 testimonials are displayed",
+        "Each testimonial includes name, 5-star rating, and quote",
+        "Layout is clean and elegantly styled",
+        "Copy is premium in tone"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Testimonials.tsx",
+          "operation": "create",
+          "description": "Create testimonials section displaying 3-4 customer reviews. Each testimonial card shows reviewer name, 5-star rating (using star icons), and aspirational quote (e.g., 'The quality is simply unmatched — I receive compliments everywhere I go.'). Use clean card or quote layout with elegant typography matching luxury theme."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add Trust Badges strip with three badges: 'Secure Checkout', 'Fast & Free Shipping', 'Premium Quality Guaranteed' with icons and descriptors",
+      "acceptanceCriteria": [
+        "Three trust badges are displayed in a horizontal row (or stacked on mobile)",
+        "Each badge has an icon and short label text",
+        "Section fits the overall luxury aesthetic"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TrustBadges.tsx",
+          "operation": "create",
+          "description": "Create trust badges section with three badges: 'Secure Checkout' (lock icon), 'Fast & Free Shipping' (shipping box icon), 'Premium Quality Guaranteed' (ribbon/star icon). Display in horizontal row on desktop, stacked on mobile. Use elegant icons and short descriptor text beneath each badge. Style to match luxury aesthetic."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add Newsletter Sign-Up section with luxury headline, email input, subscribe button, and backend integration to store emails",
+      "acceptanceCriteria": [
+        "Newsletter section appears on the homepage",
+        "Email input and subscribe button are present and functional",
+        "Submitted emails are saved to the backend",
+        "Success message is shown upon successful subscription",
+        "Section copy is aspirational and luxury-toned"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Newsletter.tsx",
+          "operation": "create",
+          "description": "Create newsletter sign-up section with headline 'Join the Circle of Elegance', description offering exclusive benefit ('15% off your first order'), email input field, and 'Subscribe' button styled in champagne gold or black. On submit, call backend.subscribeEmail(email). Display success message upon successful subscription. Handle errors gracefully. Apply luxury styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Build elegant footer with brand logo/tagline, navigation links, social media icons, and copyright line on dark background",
+      "acceptanceCriteria": [
+        "Footer contains brand name/logo and tagline",
+        "All quick links are listed and functional (navigating to correct sections/pages)",
+        "Social media icons are present with placeholder links",
+        "Footer background is dark with light text for luxury contrast",
+        "Footer is responsive"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create elegant footer component with brand logo/name and tagline. Include quick navigation links: Home, Shop, New Arrivals, Best Sellers, About Us, Contact, Privacy Policy, Terms. Add social media icon links (Instagram, Pinterest, Facebook, TikTok) with placeholder hrefs. Include copyright line with current year. Use dark background (deep black or dark charcoal) with ivory/beige text for luxury contrast. Ensure responsive layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Build Collections page with product grid and filter controls for category, price, color, and popularity with reactive filtering",
+      "acceptanceCriteria": [
+        "Collections page renders all products in a responsive grid",
+        "Category, price sort, color, and popularity filters are available and functional",
+        "Filtering updates the product grid reactively",
+        "Product cards have hover animations"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CollectionsPage.tsx",
+          "operation": "create",
+          "description": "Create collections page that fetches all products via backend.getAllProducts(). Display products in clean responsive grid. Include filter controls for: Category (Handbags, Purses, Accessories dropdown/buttons), Price (Low to High / High to Low sort), Color (color selector), and Popularity (Best Sellers, New Arrivals toggles/buttons). Implement reactive filtering that updates displayed products without page reload by calling backend.getAllProducts() with appropriate filters. Product cards have hover animations consistent with homepage showcase."
+        },
+        {
+          "path": "frontend/src/components/ProductCard.tsx",
+          "operation": "create",
+          "description": "Create reusable ProductCard component displaying product image, name, and price. Implement hover effects (scale or overlay with quick-view/wishlist icon reveal). Card navigates to product detail page on click. Ensure styling matches luxury theme and is used across Collections page and Product Showcase."
+        },
+        {
+          "path": "frontend/src/components/FilterControls.tsx",
+          "operation": "create",
+          "description": "Create filter controls component with UI for category selection (Handbags, Purses, Accessories), price sort (Low to High / High to Low), color filter, and popularity filters (Best Sellers, New Arrivals). Emit filter change events to parent (CollectionsPage) to trigger product refetch. Style with luxury aesthetic."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Build Product Detail page with image gallery, zoom, product info, variant selectors, add-to-cart/buy-now buttons, accordion sections, and customer reviews",
+      "acceptanceCriteria": [
+        "Product image gallery with at least one image and zoom functionality is present",
+        "Product name, price, description are displayed",
+        "Color and/or size variant selectors and quantity selector are present",
+        "Add to Cart and Buy Now buttons are present and styled premiumly",
+        "Shipping, Returns, and Care accordion sections expand/collapse",
+        "Customer reviews section displays existing reviews"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ProductDetailPage.tsx",
+          "operation": "create",
+          "description": "Create product detail page that fetches product by ID via backend.getProductById(id). Display large product image gallery with zoom on hover/click, product name, price, luxury-focused short description. Include variant selectors for color and size (if applicable), quantity selector, 'Add to Cart' button (black/gold styled), and 'Buy Now' button. Add expandable accordion sections for Shipping, Returns, and Care Instructions. Include customer reviews section that displays existing reviews. Wire add-to-cart action to cart state. Ensure all elements are styled with luxury aesthetic."
+        },
+        {
+          "path": "frontend/src/components/ImageGallery.tsx",
+          "operation": "create",
+          "description": "Create image gallery component for product detail page. Display main product image with thumbnails. Implement zoom functionality on hover or click (e.g., magnifying glass effect or lightbox). Support multiple images. Style with luxury aesthetic."
+        },
+        {
+          "path": "frontend/src/components/AccordionSection.tsx",
+          "operation": "create",
+          "description": "Create reusable accordion component for expandable sections (Shipping, Returns, Care Instructions). Each section expands/collapses on click with smooth animation. Style to match luxury theme."
+        },
+        {
+          "path": "frontend/src/components/ReviewsSection.tsx",
+          "operation": "create",
+          "description": "Create reviews section component that displays existing customer reviews for a product (fetched from backend or included in product data). Each review shows reviewer name, star rating, comment, and timestamp. Style with luxury aesthetic. Reviews are read-only on this page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Implement slide-out Cart Drawer with cart items, quantity controls, remove button, subtotal, and checkout CTA with persistent cart state",
+      "acceptanceCriteria": [
+        "Cart drawer slides in from the right when cart icon is clicked",
+        "Drawer lists all cart items with image, name, price, and quantity controls",
+        "Items can be removed from the cart",
+        "Subtotal is calculated and displayed",
+        "Checkout CTA button is present",
+        "Cart state persists across page navigations within the session"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/CartDrawer.tsx",
+          "operation": "create",
+          "description": "Create slide-out cart drawer component that opens from the right side with smooth animation when cart icon in header is clicked. Display all cart items with product image, name, price, quantity controls (increment/decrement), and remove button. Calculate and display order subtotal. Include 'Proceed to Checkout' CTA button. Wire to cart state managed in context or store. Ensure drawer closes on outside click or close button."
+        },
+        {
+          "path": "frontend/src/hooks/useCart.ts",
+          "operation": "create",
+          "description": "Create useCart hook to manage cart state. Provide functions to add items, remove items, update quantities, and calculate subtotal. Persist cart state in localStorage or session storage so it persists across page navigations. Export cart items array, item count, and cart manipulation functions."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Implement Wishlist feature with heart icon on product cards/detail pages and dedicated Wishlist page listing saved products",
+      "acceptanceCriteria": [
+        "Heart/wishlist icon is present on product cards and product detail pages",
+        "Toggling the icon adds/removes the product from the wishlist",
+        "A Wishlist page is accessible and shows all saved items",
+        "Each wishlist item has an 'Add to Cart' button"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useWishlist.ts",
+          "operation": "create",
+          "description": "Create useWishlist hook to manage wishlist state. Provide functions to add/remove products from wishlist and check if a product is in wishlist. Persist wishlist state in localStorage. Export wishlist items array and wishlist manipulation functions."
+        },
+        {
+          "path": "frontend/src/pages/WishlistPage.tsx",
+          "operation": "create",
+          "description": "Create dedicated Wishlist page that displays all saved wishlist items. Each item shows product image, name, price, and 'Add to Cart' button that adds the item to cart. Include remove/heart icon to remove from wishlist. Display empty state message if wishlist is empty. Style with luxury aesthetic."
+        },
+        {
+          "path": "frontend/src/components/ProductCard.tsx",
+          "operation": "modify",
+          "description": "Add heart/wishlist icon to ProductCard component. Wire icon to useWishlist hook to toggle product in/out of wishlist. Icon shows filled state when product is in wishlist. Apply luxury styling to icon with hover effects."
+        },
+        {
+          "path": "frontend/src/pages/ProductDetailPage.tsx",
+          "operation": "modify",
+          "description": "Add heart/wishlist icon to product detail page near product name or image gallery. Wire to useWishlist hook to toggle product in/out of wishlist. Style icon to match luxury aesthetic."
+        }
+      ]
+    },
+    {
+      "id": "REQ-1",
+      "summary": "Wire all pages and components into App router and navigation structure",
+      "acceptanceCriteria": [],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire all created pages and components into the React app structure. Set up React Router with routes for: Home (with HeroSection, FeaturedCollections, BrandStory, ProductShowcase, Testimonials, TrustBadges, Newsletter), CollectionsPage, ProductDetailPage, WishlistPage. Include Header and Footer on all pages. Ensure navigation links in Header and Footer navigate to correct routes. Wrap app with cart and wishlist context providers if using context pattern."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create HomePage component that composes HeroSection, FeaturedCollections, BrandStory, ProductShowcase, Testimonials, TrustBadges, and Newsletter sections in order. This is the main landing page rendered at root route '/'."
+        }
+      ]
+    }
+  ]
+}

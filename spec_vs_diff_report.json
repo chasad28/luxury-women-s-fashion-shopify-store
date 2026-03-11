@@ -1,0 +1,136 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-02T19:48:17.855Z",
+  "summary": "The diff implements the vast majority of requirements across both frontend and backend. All major pages, components, hooks, and backend logic appear present. A few specific acceptance criteria have gaps or are uncertain due to file truncation, but overall implementation is thorough.",
+  "missing_requirements": [
+    {
+      "requirement": "Product Detail page: size variant selector",
+      "reason": "REQ-12 requires color and/or size variant selectors. The Product type in backend/main.mo has no sizes field, suggesting size variants are not implemented. ProductDetailPage file was omitted from diff so cannot confirm color selector either.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/hooks/useQueries.ts"
+      ]
+    },
+    {
+      "requirement": "Collections page color filter passed to backend query",
+      "reason": "FilterControls.tsx shows a color filter UI, but useQueries.ts useGetAllProducts does not pass a color parameter to the backend. REQ-11 requires color filtering to be functional.",
+      "evidence": [
+        "frontend/src/hooks/useQueries.ts",
+        "frontend/src/components/FilterControls.tsx"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "requirement": "All data persists across canister upgrades using stable variables",
+      "reason": "The backend uses Map.empty() for in-memory state and a var for nextProductId with no visible stable variable declarations or pre/postupgrade hooks in the truncated backend/main.mo. Data will not persist across canister upgrades.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Search icon button in the Header navigation",
+      "reason": "REQ-2 specifies cart icon, wishlist icon, and hamburger menu only. No search icon was requested.",
+      "evidence": [
+        "frontend/src/components/Header.tsx"
+      ]
+    },
+    {
+      "description": "Wishlist count badge on the wishlist icon in the header",
+      "reason": "REQ-2 specifies a cart item count badge but does not specify a wishlist count badge.",
+      "evidence": [
+        "frontend/src/components/Header.tsx"
+      ]
+    },
+    {
+      "description": "Secondary 'Our Story' CTA button in the Hero section",
+      "reason": "REQ-3 specifies only a 'Shop Now' CTA button. A second 'Our Story' button navigating to /about was added beyond the requirement.",
+      "evidence": [
+        "frontend/src/components/HeroSection.tsx"
+      ]
+    },
+    {
+      "description": "Scroll indicator with animated line at the bottom of the Hero section",
+      "reason": "REQ-3 does not specify a scroll indicator element.",
+      "evidence": [
+        "frontend/src/components/HeroSection.tsx"
+      ]
+    },
+    {
+      "description": "Stats panel in the Brand Story section showing years, handcrafted percentage, and artisan count",
+      "reason": "REQ-5 specifies a headline, 2-3 paragraphs, and optional side image. A stats strip was not requested.",
+      "evidence": [
+        "frontend/src/components/BrandStory.tsx"
+      ]
+    },
+    {
+      "description": "addProduct mutation exposed in useQueries.ts for frontend product management",
+      "reason": "No requirement mentions an admin interface or ability to add products via the frontend. REQ-15 only requires listing, fetching, reviewing, and subscribing functions.",
+      "evidence": [
+        "frontend/src/hooks/useQueries.ts"
+      ]
+    },
+    {
+      "description": "Reviewer location/city field displayed in Testimonials",
+      "reason": "REQ-7 specifies reviewer name, star rating, and quote only. A city or location field was not requested.",
+      "evidence": [
+        "frontend/src/components/Testimonials.tsx"
+      ]
+    },
+    {
+      "description": "Full Privacy Policy and Terms of Service page routes implemented",
+      "reason": "REQ-10 mentions these as footer links only. Full page component implementations were built beyond what was specified.",
+      "evidence": [
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "description": "Cart state persisted to localStorage across browser sessions",
+      "reason": "REQ-13 specifies cart state persists across page navigations within the session. localStorage persistence goes beyond the stated session-scoped requirement.",
+      "evidence": [
+        "frontend/src/hooks/useCart.ts"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/BrandStory.tsx",
+    "frontend/src/components/CartDrawer.tsx",
+    "frontend/src/components/FeaturedCollections.tsx",
+    "frontend/src/components/FilterControls.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/ImageGallery.tsx",
+    "frontend/src/components/Newsletter.tsx",
+    "frontend/src/components/ProductCard.tsx",
+    "frontend/src/components/ProductShowcase.tsx",
+    "frontend/src/components/ReviewsSection.tsx",
+    "frontend/src/components/Testimonials.tsx",
+    "frontend/src/components/TrustBadges.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useCart.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useWishlist.ts",
+    "frontend/src/index.css",
+    "frontend/src/lib/products.ts",
+    "frontend/src/lib/useIntersectionObserver.ts",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/CollectionsPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/ProductDetailPage.tsx",
+    "frontend/src/pages/WishlistPage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

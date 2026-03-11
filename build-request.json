@@ -1,0 +1,341 @@
+{
+  "kind": "build_request",
+  "title": "Luxury Women's Fashion E-Commerce Website",
+  "projectName": "Maison Élite",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a luxury visual theme across the entire frontend: color palette of soft beige (#F5F0E8), ivory (#FFFFF0), champagne gold (#C9A84C), and black (#0A0A0A) accents. Use an elegant serif font (e.g., Playfair Display or similar via Google Fonts) for all headings and a clean sans-serif (e.g., Raleway or Lato) for body text. Apply generous white space, smooth scroll behavior, and subtle fade/slide-in animations on scroll for all sections. Ensure fully mobile-first responsive design.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Minimalist luxury design inspired by high-fashion brands",
+          "Color palette: soft beige, ivory, champagne gold, black accents",
+          "Typography: elegant serif font for headings + clean sans-serif for body text"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All headings use a serif font and all body text uses a sans-serif font",
+        "Color palette matches beige, ivory, champagne gold, and black accents throughout",
+        "Page has smooth scrolling and subtle entrance animations on content sections",
+        "Layout is fully responsive and mobile-first at 375px, 768px, and 1280px breakpoints"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a sticky navigation header with the brand logo/name left-aligned or centered, and menu links: Home, Shop, New Arrivals, Best Sellers, About Us, Contact. Include cart icon with item count badge, wishlist icon, and a hamburger menu for mobile. Navigation must remain visible on scroll with a semi-transparent or solid luxury background.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Simple, clean header with logo centered or left-aligned",
+          "Menu: Home, Shop, New Arrivals, Best Sellers, About Us, Contact",
+          "Sticky navigation bar"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation sticks to the top of the viewport on scroll",
+        "All six menu links are present and navigate to their respective sections/pages",
+        "Cart icon shows item count badge",
+        "Hamburger menu appears on mobile and expands into a full-screen or slide-out menu"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a full-width hero section as the first section on the homepage. It must display the generated hero lifestyle image as a full-bleed background, overlaid with an aspirational luxury headline (e.g., 'Carry the Art of Elegance'), a supporting subheadline, and a prominently styled 'Shop Now' CTA button in champagne gold or black. The text overlay must be legible with a subtle dark gradient if needed.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Full-width hero section with a powerful luxury headline and call-to-action button (Shop Now)",
+          "Large hero sections with full-width lifestyle imagery"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section spans full viewport width and at least 90vh on desktop",
+        "Headline, subheadline, and 'Shop Now' button are visible and legible over the image",
+        "CTA button is styled with premium styling (gold or black with hover effect)",
+        "Section is responsive and looks polished on mobile"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build a Featured Collections section below the hero showcasing four collection cards: Handbags, Purses, New Arrivals, and Best Sellers. Each card displays a collection image, collection name, and a subtle 'Explore' link. Cards should have a hover animation (e.g., scale or overlay fade). Clicking a card navigates to the corresponding filtered collections page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Featured collections (Handbags, Purses, New Arrivals, Best Sellers)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four collection cards are displayed in a responsive grid (2x2 on mobile, 4-column on desktop)",
+        "Each card shows image, title, and Explore link",
+        "Hover animation is present on each card",
+        "Cards link to the corresponding filtered collections view"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Brand Story section that communicates craftsmanship, elegance, and exclusivity. It should include a headline (e.g., 'Born from a Love of Fine Craftsmanship'), a 2–3 paragraph luxury-toned description, and optionally a side image. Copy must use premium, aspirational language and avoid casual tone.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Brand story section that communicates craftsmanship, elegance, and exclusivity"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Brand story section is present on the homepage",
+        "Copy is written in an aspirational, luxury tone",
+        "Section includes a headline and at least two paragraphs",
+        "Section is visually distinct with adequate white space"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build a Product Showcase Grid section on the homepage displaying 6–8 placeholder luxury products. Each product card shows the product image, name, and price. Cards must have hover effects (e.g., image zoom-in or overlay with quick-view or wishlist icon). Clicking a card navigates to the product detail page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Product showcase grid with hover effects"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Grid shows 6–8 product cards in a responsive layout",
+        "Each card has product image, name, and price",
+        "Hover effect is present (scale, overlay, or icon reveal)",
+        "Clicking a card navigates to the product detail page"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a Social Proof / Testimonials section with 3–4 customer reviews. Each testimonial shows the reviewer's name, star rating (5 stars), and quote. Use elegant typography and a clean card or quote layout. Content must sound aspirational and premium (e.g., 'The quality is simply unmatched — I receive compliments everywhere I go.').",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Social proof section (customer reviews / testimonials)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "3–4 testimonials are displayed",
+        "Each testimonial includes name, 5-star rating, and quote",
+        "Layout is clean and elegantly styled",
+        "Copy is premium in tone"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a Trust Badges strip/section with three badges: 'Secure Checkout', 'Fast & Free Shipping', and 'Premium Quality Guaranteed'. Use elegant icons (e.g., lock, shipping box, ribbon/star) and short descriptor text beneath each badge.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Trust badges (secure checkout, fast shipping, premium quality)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three trust badges are displayed in a horizontal row (or stacked on mobile)",
+        "Each badge has an icon and short label text",
+        "Section fits the overall luxury aesthetic"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add a Newsletter Sign-Up section with a luxury-toned headline (e.g., 'Join the Circle of Elegance'), a short description offering an exclusive benefit (e.g., '15% off your first order'), an email input field, and a 'Subscribe' button styled in champagne gold or black. Store subscribed email addresses in the backend.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Newsletter sign-up with an exclusive luxury offer"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Newsletter section appears on the homepage",
+        "Email input and subscribe button are present and functional",
+        "Submitted emails are saved to the backend",
+        "Success message is shown upon successful subscription",
+        "Section copy is aspirational and luxury-toned"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Build an elegant footer with: brand logo/name and tagline, quick navigation links (Home, Shop, New Arrivals, Best Sellers, About Us, Contact, Privacy Policy, Terms), social media icon links (Instagram, Pinterest, Facebook, TikTok — placeholder hrefs), and a copyright line. Use a dark background (deep black or very dark charcoal) with ivory/beige text for contrast.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Elegant footer with quick links, social media icons, and brand tagline"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer contains brand name/logo and tagline",
+        "All quick links are listed and functional (navigating to correct sections/pages)",
+        "Social media icons are present with placeholder links",
+        "Footer background is dark with light text for luxury contrast",
+        "Footer is responsive"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Build a Collections page that displays all products in a clean grid layout. Include filter controls for: Category (Handbags, Purses, Accessories), Price (Low to High / High to Low), Color, and Popularity (Best Sellers, New Arrivals). Product cards in the grid must have hover animations consistent with the homepage showcase grid. Filtering must update the displayed products reactively without page reload.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Filter by category, price, color, and popularity",
+          "Clean grid layout with hover animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Collections page renders all products in a responsive grid",
+        "Category, price sort, color, and popularity filters are available and functional",
+        "Filtering updates the product grid reactively",
+        "Product cards have hover animations"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Build a Product Detail page. It must include: large product image gallery with image zoom on hover/click, product name, price, short luxury-focused description, variant selectors (e.g., color, size), quantity selector, 'Add to Cart' button (black/gold styled) and 'Buy Now' button, expandable accordion sections for Shipping, Returns, and Care Instructions, and a Customer Reviews section showing existing reviews and allowing logged-in users to leave a review.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "High-resolution product images with zoom",
+          "Clean product descriptions focused on benefits and luxury feel",
+          "Price, variants, and quantity selector clearly visible",
+          "Add to Cart & Buy Now buttons with premium styling",
+          "Shipping, returns, and care details",
+          "Customer reviews section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Product image gallery with at least one image and zoom functionality is present",
+        "Product name, price, description are displayed",
+        "Color and/or size variant selectors and quantity selector are present",
+        "Add to Cart and Buy Now buttons are present and styled premiumly",
+        "Shipping, Returns, and Care accordion sections expand/collapse",
+        "Customer reviews section displays existing reviews"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Implement a slide-out Cart Drawer accessible via the cart icon in the navigation. It must display all cart items (image, name, price, quantity controls, remove button), order subtotal, and a 'Proceed to Checkout' CTA. The drawer opens and closes with a smooth slide animation from the right side. Cart state must persist across page navigations.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Cart drawer with smooth animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Cart drawer slides in from the right when cart icon is clicked",
+        "Drawer lists all cart items with image, name, price, and quantity controls",
+        "Items can be removed from the cart",
+        "Subtotal is calculated and displayed",
+        "Checkout CTA button is present",
+        "Cart state persists across page navigations within the session"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Implement a Wishlist feature. Users can add/remove products to a wishlist by clicking a heart icon on product cards and product detail pages. A dedicated Wishlist page lists all saved products with their image, name, price, and an 'Add to Cart' button. Wishlist state should persist in local frontend state or backend.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Wishlist feature"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Heart/wishlist icon is present on product cards and product detail pages",
+        "Toggling the icon adds/removes the product from the wishlist",
+        "A Wishlist page is accessible and shows all saved items",
+        "Each wishlist item has an 'Add to Cart' button"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Define the backend data model and persistence for: Products (id, name, description, price, category, colors, images, stock, isBestSeller, isNewArrival), Product Reviews (productId, reviewer, rating, comment, timestamp), and Newsletter Subscribers (email, timestamp). Expose query and update functions for: listing products with optional filters, fetching a single product by ID, submitting a product review, and subscribing an email to the newsletter.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Fully functional Shopify store setup",
+          "SEO-friendly structure"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Products can be listed with optional category, color, and sort filters",
+        "A single product can be fetched by ID",
+        "A review can be submitted for a product and is stored persistently",
+        "An email can be submitted and stored for newsletter subscription",
+        "All data persists across canister upgrades using stable variables"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not integrate with Shopify or any external e-commerce platform — build the full store UI and logic within the React + Motoko stack",
+    "Do not use blue or purple anywhere in the color palette",
+    "All navigation links that correspond to pages/sections must render within the single-page React app without external redirects",
+    "No external payment processor integration; checkout button may show a placeholder confirmation flow"
+  ],
+  "nonGoals": [
+    "Real payment processing or Stripe integration",
+    "Live Shopify theme file output or Liquid templating",
+    "User authentication or account creation (Internet Identity not required for this build)",
+    "Real-time inventory management",
+    "External CMS or headless commerce API integration"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Full-width luxury lifestyle hero image: a stylish woman in elegant attire holding a premium leather handbag in a clean, high-fashion setting with soft warm lighting and minimal background (hero-lifestyle.dim_1920x1080.jpg)",
+      "Collection card image for Handbags: close-up of a structured luxury leather handbag on a marble surface with soft shadows and champagne gold accents (collection-handbags.dim_800x600.jpg)",
+      "Collection card image for Purses: elegant clutch purse displayed on a soft ivory fabric with delicate floral accents (collection-purses.dim_800x600.jpg)",
+      "Collection card image for New Arrivals: flat-lay of three new luxury accessories — a mini bag, a card holder, and a silk scarf on a beige background (collection-new-arrivals.dim_800x600.jpg)",
+      "Collection card image for Best Sellers: row of premium handbags in neutral tones displayed against a clean white studio background (collection-best-sellers.dim_800x600.jpg)",
+      "Product image 1: structured black leather tote bag on a white marble surface, luxury editorial style (product-tote-black.dim_800x800.jpg)",
+      "Product image 2: cream-colored quilted leather crossbody bag with gold chain strap on a soft beige background (product-crossbody-cream.dim_800x800.jpg)",
+      "Product image 3: camel brown leather satchel bag photographed in natural daylight with a minimalist composition (product-satchel-camel.dim_800x800.jpg)",
+      "Product image 4: small gold-tone evening clutch on a dark velvet surface with soft bokeh lighting (product-clutch-gold.dim_800x800.jpg)",
+      "Product image 5: beige leather mini bucket bag with suede texture and gold hardware (product-bucket-beige.dim_800x800.jpg)",
+      "Product image 6: sleek patent leather shoulder bag in deep black with silver hardware editorial photograph (product-shoulder-black.dim_800x800.jpg)",
+      "Brand story section background: soft-focus image of a craftsperson's hands stitching leather in warm golden workshop light (brand-story-craftsmanship.dim_1200x700.jpg)"
+    ],
+    "edits": []
+  }
+}
